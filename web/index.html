@@ -57,29 +57,30 @@
                     </td>
                 </tr>
                 <tr>
-
                     <td>
-                        <label for="Height_(cm)">How tall are you? (cm) <a href="https://www.thecalculatorsite.com/conversions/common/height-converter.php" target="_blank">Calculate</a></label>
+                        <label for="Exercise">Do you exercise?:</label>
                     </td>
                     <td>
-                        <input type="text" id="Height_(cm)" name="Height_(cm)" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Weight_(kg)">Weight? (kg): <a href="https://www.rapidtables.com/convert/weight/pound-to-kg.html" target="_blank">Calculate</a></label>
-                    </td>
-                    <td>
-                        <input type="text" id="Weight_(kg)" name="Weight_(kg)" required>
+                        <input type="radio" name="Exercise" value="1"> Yes
+                        <input type="radio" name="Exercise" value="0"> No
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Smoking_History">Have you smoked at least 100 cigarettes in your entire life?:</label>
+                        <label for="Skin_Cancer">Skin cancer?:</label>
                     </td>
                     <td>
-                        <input type="radio" name="Smoking_History" value="1"> Yes
-                        <input type="radio" name="Smoking_History" value="0"> No
+                        <input type="radio" name="Skin_Cancer" value="1"> Yes
+                        <input type="radio" name="Skin_Cancer" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Other_Cancer">Other types of cancer?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Other_Cancer" value="1"> Yes
+                        <input type="radio" name="Other_Cancer" value="0"> No
                     </td>
                 </tr>
                 <tr>
@@ -111,20 +112,35 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="Skin_Cancer">Skin cancer?:</label>
+                        <label for="Height_(cm)">How tall are you? (cm) <a href="https://www.thecalculatorsite.com/conversions/common/height-converter.php" target="_blank">Calculate</a></label>
                     </td>
                     <td>
-                        <input type="radio" name="Skin_Cancer" value="1"> Yes
-                        <input type="radio" name="Skin_Cancer" value="0"> No
+                        <input type="text" id="Height_(cm)" name="Height_(cm)" required>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <label for="Other_Cancer">Other types of cancer?:</label>
+                        <label for="Weight_(kg)">Weight? (kg): <a href="https://www.rapidtables.com/convert/weight/pound-to-kg.html" target="_blank">Calculate</a></label>
                     </td>
                     <td>
-                        <input type="radio" name="Other_Cancer" value="1"> Yes
-                        <input type="radio" name="Other_Cancer" value="0"> No
+                        <input type="text" id="Weight_(kg)" name="Weight_(kg)" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="BMI">BMI: <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" target="_blank">Calculate</a></label>
+                    </td>
+                    <td>
+                        <input type="text" id="BMI" name="BMI" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Smoking_History">Have you smoked at least 100 cigarettes in your entire life?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Smoking_History" value="1"> Yes
+                        <input type="radio" name="Smoking_History" value="0"> No
                     </td>
                 </tr>
                 <tr>
@@ -141,6 +157,14 @@
                     </td>
                     <td>
                         <input type="text" id="Fruit_Consumption" name="Fruit_Consumption" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Green_Vegetables_Consumption">Vegetable consumption?:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Green_Vegetables_Consumption" name="Green_Vegetables_Consumption" required>
                     </td>
                 </tr>
                 <tr>
