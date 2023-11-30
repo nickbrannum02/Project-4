@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Survey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the User Survey</h1>
+        <p>Thank you for participating! Your input is valuable.</p>
+    </header>
+
+    <section>
+        <h2>About the Survey</h2>
+        <p>This survey aims to gather information about your preferences and experiences. Your responses will be used to provide personalized recommendations.</p>
+    </section>
+
+
+    <section>
+        <h2>Survey Questions</h2>
+        <form id="surveyForm">
+            <table>
+                <tr>
+                    <td class="width-40">
+                        <label for="age">Please select your age category:</label>
+                    </td>
+                    <td class="width-60">
+                        <select id="age" name="age">
+                            <option value="">Please select one</option>
+                            <option value="Age_Category_18-24">18 - 24</option>
+                            <option value="Age_Category_25-29">25 - 29</option>
+                            <option value="Age_Category_30-34">30 - 34</option>
+                            <option value="Age_Category_35-39">35 - 39</option>
+                            <option value="Age_Category_40-44">40 - 44</option>
+                            <option value="Age_Category_45-49">45 - 49</option>
+                            <option value="Age_Category_50-54">50 - 54</option>
+                            <option value="Age_Category_55-59">55 - 59</option>
+                            <option value="Age_Category_60-64">60 - 64</option>
+                            <option value="Age_Category_65-69">65 - 69</option>
+                            <option value="Age_Category_70-74">70 - 74</option>
+                            <option value="Age_Category_75-79">75 - 79</option>
+                            <option value="Age_Category_80+">80+</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sex">Sex:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="sex" value="Sex_Male"> Male
+                        <input type="radio" name="sex" value="Sex_Female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Exercise">During the past month, other than your regular job, did you participate in any physical activities or exercises such as running, calisthenics, golf, gardening, or walking for exercise?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Exercise" value="1"> Yes
+                        <input type="radio" name="Exercise" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Skin_Cancer">Have you ever been told you had skin cancer?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Skin_Cancer" value="1"> Yes
+                        <input type="radio" name="Skin_Cancer" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Other_Cancer">Have you ever been told you had any other types of cancer?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Other_Cancer" value="1"> Yes
+                        <input type="radio" name="Other_Cancer" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Depression">Have you ever been told you had a depressive disorder (including depression, major depression, dysthymia, or minor depression)?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Depression" value="1"> Yes
+                        <input type="radio" name="Depression" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Diabetes">Have you ever been told you have diabetes?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Diabetes" value="1"> Yes
+                        <input type="radio" name="Diabetes" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Arthritis">Have you ever been told that you had some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Arthritis" value="1"> Yes
+                        <input type="radio" name="Arthritis" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Height_(cm)">How tall are you? (cm) <a href="https://www.thecalculatorsite.com/conversions/common/height-converter.php" target="_blank">Calculate</a></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Height_(cm)" name="Height_(cm)" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Weight_(kg)">Weight? (kg): <a href="https://www.rapidtables.com/convert/weight/pound-to-kg.html" target="_blank">Calculate</a></label>
+                    </td>
+                    <td>
+                        <input type="text" id="Weight_(kg)" name="Weight_(kg)" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="BMI">BMI: <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" target="_blank">Calculate</a></label>
+                    </td>
+                    <td>
+                        <input type="text" id="BMI" name="BMI" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Smoking_History">Have you smoked at least 100 cigarettes in your entire life?:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Smoking_History" value="1"> Yes
+                        <input type="radio" name="Smoking_History" value="0"> No
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Alcohol_Consumption">During the past 30 days, how many days did you have at least one drink <br>
+                             of any alcoholic beverage such as beer, wine, a malt beverage or liquor?:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Alcohol_Consumption" name="Alcohol_Consumption" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Fruit_Consumption">During the past 30 days, not including juices, how often did you eat fruit?:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Fruit_Consumption" name="Fruit_Consumption" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Green_Vegetables_Consumption">During the past 30 days, how often did you eat a green leafy or lettuce salad, with or without other vegetables?:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Green_Vegetables_Consumption" name="Green_Vegetables_Consumption" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="FriedPotato_Consumption">During the past 30 days, how often did you eat any kind of fried potatoes, including French fries, home fries, or hash browns?:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="FriedPotato_Consumption" name="FriedPotato_Consumption" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2"><button type="submit">Submit</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">The contents of this website are not intended to diagnose or treat any disease, 
+                        or offer personal medical advice. You should seek the advice of your physician or other qualified health provider 
+                        with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay 
+                        in seeking it because of something you have read on this website.
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
+</body>
+</html>
